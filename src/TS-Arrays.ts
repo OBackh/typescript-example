@@ -35,5 +35,14 @@ console.log("Array 'list' nach Anwendung von .some:\n" + list.sort((a, b) => a -
 console.log("\nOriginal array 'list':\n"+list+"\nAll numbers squared:\n" + list.map(s => s * s));
 
 // Remove lowest 2 and the highest 4
-list.sort((a, b) => a -b);
-console.log("\nRemove the lowest two numbers and the highest 4 numbers from the list:\n"+list+"\n"+list.slice(2, list.length - 4));
+
+// list.sort((a, b) => a -b);
+console.log("\nRemove the lowest two numbers and the highest 4 numbers from the list:\n"+list+"\n"+list.sort((a, b) => a -b).slice(2, list.length - 4));
+
+// Remove all numbers that are divisble by 4
+
+console.log("Remove all numbers that are divisble by 4:\n"+list.filter(d => d%4 !== 0));
+
+// All together
+
+console.log("Add up: \n"+ list.sort((a, b) => a - b).map(s => s * s).sort((a, b) => a -b).slice(2, list.length - 4).filter(d => d%4 !== 0).reduce((prev: number, current: number) => prev + current));
