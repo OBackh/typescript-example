@@ -27,5 +27,12 @@ console.log("Is one element greater than 10 in this array?\n"+numbers3+"\nAnswer
 // Sort desc
 
 const list = [15, 6, 3213, 9, 0, 12, 8464 , 1, 1264, 481, 186, 1031, 194];
-console.log("\nOriginales Array 'list':\n"+list);
+console.log("\nOriginal array 'list':\n"+list);
 console.log("Array 'list' nach Anwendung von .some:\n" + list.sort((a, b) => a - b));
+
+// Square
+
+const list2 = [15, 6, 3213, 9, 0, 12, 8464 , 1, 1264, 481, 186, 1031, 194];
+console.log("\nOriginal array 'list':\n"+list2+"\nAll numbers squared:\n" + list2.map(s => s * s));
+
+//
