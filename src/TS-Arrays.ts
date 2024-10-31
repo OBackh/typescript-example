@@ -21,3 +21,11 @@ console.log("\nOriginal Arry:\n"+ numbers2+"\nSum of all entrys:\n" + numbers2su
 const numbers3: number[] = [2,4,6,8,10,12,14];
 const numbersGt10: number[] = numbers3.some(n => n > 10);
 console.log("Is one element greater than 10 in this array?\n"+numbers3+"\nAnswer: "+numbersGt10);
+
+// Bonus
+
+// Sort desc
+
+const list = [15, 6, 3213, 9, 0, 12, 8464 , 1, 1264, 481, 186, 1031, 194];
+console.log("\nOriginales Array 'list':\n"+list);
+console.log("Array 'list' nach Anwendung von .some:\n" + list.sort((a, b) => a - b));
