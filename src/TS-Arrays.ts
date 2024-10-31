@@ -32,7 +32,7 @@ console.log("Array 'list' nach Anwendung von .some:\n" + list.sort((a, b) => a -
 
 // Square
 
-const list2 = [15, 6, 3213, 9, 0, 12, 8464 , 1, 1264, 481, 186, 1031, 194];
-console.log("\nOriginal array 'list':\n"+list2+"\nAll numbers squared:\n" + list2.map(s => s * s));
+console.log("\nOriginal array 'list':\n"+list+"\nAll numbers squared:\n" + list.map(s => s * s));
 
-//
+// Remove lowest 2 and the highest 4
+
