@@ -35,4 +35,5 @@ console.log("Array 'list' nach Anwendung von .some:\n" + list.sort((a, b) => a -
 console.log("\nOriginal array 'list':\n"+list+"\nAll numbers squared:\n" + list.map(s => s * s));
 
 // Remove lowest 2 and the highest 4
-
+list.sort((a, b) => a -b);
+console.log("\nRemove the lowest two numbers and the highest 4 numbers from the list:\n"+list+"\n"+list.slice(2, list.length - 4));
